@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+
+    <meta charset = "UTF-8">
+    <meta name = "author" content="Stina">
+    <meta name = "description" content = "Slutprojekt inom webbutveckling 1">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <title>Slutprojekt - Webbprojekt</title>
+    <link rel = "stylesheet" href = "index.css">
+    <script src = "https://kit.fontawesome.com/9b848e0a0d.js" crossorigin = "anonymous"></script>
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <header>
+
+        <div class = "container">
+            <div class="flex">
+                <img src = "final website logo.png" alt = "Website-logo">
+                <div class="nav-bar">
+                    <a class = "active" href = "#home">Home</a>
+                    <a class = "about us" href = "#about us">About us</a>
+                    <a class = "contact" href = "#contact">Contact</a>
+
+                    <div class = "dropdown">
+                    
+                        <button onclick = "myFunction" class = "dropbtn">Content</button>
+                        <div id = "myDropdown" class = "dropdown-content">
+    
+                            <a href = "TheDeepOcean.html">The Deep Ocean</a>
+                            <a href = "MarineLife.html">Marine life</a>
+                            <a href = "CoralReefs.html">Coral reefs - the oceans rainforest</a>
+                            <a href = "Endangered.html">Endangered ecosystems</a>
+                            
+                        </div>
+                    </div>
+
+                    <form class = "example" action = "action_page.php" style = "width: auto; max-width: 325px;">
+                        <input type = "text" placeholder = "Search.." name = "search">
+                        <button type = "submit"><i class = "fa fa-search"></i></button>
+                    </form>
+
+                </div>
+               
+            </div>
+        </div>
+    </header>
+    <div style = "width: 95vw; height: 10vh;"></div>
+
+    <section class = "component-content bg-white">
+        <div class = "row">
+           <div class = "col-sm-12 col-md-6 content-text d-flex flex-column">
+                <div class = "entry-content content-image flex-grow-1">
+                    <h1 class = "glow">Contact</h1>
+                    <h2 class = "custom-border-buttom">Under The Sea UTS</h2>
+                    <p class = "premable"><strong>Mailing adress:</strong> Randomvägen 69B, 632 20 Eskilstuna</p>
+                    <p>
+                        <strong>Telephone:</strong>
+                        070-236 62 68
+                        <br>
+                        <strong>E-mail:</strong>
+                        stijor1225@student.grillska.se
+                    </p>
+                </div>
+           </div>
+        </div> 
+
+        <div class = "form-container">
+            <form action = "action_page.php">
+          
+              <label for = "fname">First Name</label>
+              <input type = "text" id = "fname" name = "firstname" placeholder = "Your name..">
+          
+              <label for = "lname">Last Name</label>
+              <input type = "text" id = "lname" name = "lastname" placeholder = "Your last name..">
+          
+              <label for = "E-mail">E-mail</label>
+              <input type = "text" id = "lemail" name = "E-mail" placeholder="Your email..">
+          
+              <label for = "subject">Subject</label>
+              <textarea id = "subject" name = "subject" placeholder = "Write something.." style = "height:200px"></textarea>
+          
+              <input type = "submit" value = "Submit">
+          
+            </form>
+          </div>
+
+    </section>
+
+
+
+    
+</body>
